@@ -1,11 +1,3 @@
-//missing point 
-//1. object create new key and assign value
-//2. read keys of Object
-//3. read values of Object 
-//4. typeof undeclared variable
-//5. Number.NaN()
-
-
 //Number.NaN
 
 // console.log(Number.isNaN('hello'))
@@ -75,9 +67,9 @@
 
 //---------------
 //Copying Object
-var obj1 = {name: 'a', age: '3'}
-var CoppiedObj = obj1; // ???
-console.log(obj1 === CoppiedObj);
+// var obj1 = {name: 'a', age: '3'}
+// var CoppiedObj = obj1; // ???
+// console.log(obj1 === CoppiedObj);
 
 
 // use destructing operator (...)
@@ -95,26 +87,26 @@ console.log(obj1 === CoppiedObj);
 // var coppiedObj = {...obj1};
 // console.log(coppiedObj.key2 === obj1.key2);
 
-var coppiedObj = Object.assign({}, obj1);
-console.log(coppiedObj.key2 === obj1.key2);
+// var coppiedObj = Object.assign({}, obj1);
+// console.log(coppiedObj.key2 === obj1.key2);
 
 
 
 // var coppiedObj = JSON.parse(JSON.stringify(obj1));
 // console.log(coppiedObj.key2 === obj1.key2);
 
-console.log(Object.getOwnPropertyDescriptor(coppiedObj, 'name')); 
+// console.log(Object.getOwnPropertyDescriptor(coppiedObj, 'name')); 
 
-var myObj = {a: '1'}
-Object.defineProperty(myObj, 'b', {
-    value: '2',
-    writable: true,
-    configurable: true,
-    enumerable: false,
-})
+// var myObj = {a: '1'}
+// Object.defineProperty(myObj, 'b', {
+//     value: '2',
+//     writable: true,
+//     configurable: true,
+//     enumerable: false,
+// })
 
-console.log('myObj', myObj);
-console.log('myObj', myObj.b);
+// console.log('myObj', myObj);
+// console.log('myObj', myObj.b);
 
 
 
@@ -125,11 +117,15 @@ console.log('myObj', myObj.b);
 // var arr = new Array('1', '2');
 // var arr2 = [];
 // console.log(arr);
+// console.log(typeof arr);
 
 //--------------
 // most usefull array properity 
 // length 
+// var arr = [1,'s',3, 'hello']
 // console.log(arr.lenght);
+// arr.lenght = 0
+// console.log(arr)
 
 // arr.map
 // var arr = [1,2,3,4,5]
@@ -188,5 +184,115 @@ console.log('myObj', myObj.b);
 //Array.push, Array.pop, Array.shift, Array.unshif, Array.some, Array.every
 //Array Docs
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+
+
+//Function ---------------------------------------------------------
+
+// function myfn() {
+
+// }
+// console.log(typeof myfn);
+
+//how can declare a function 
+//normal function 
+// function fn() {
+//     //you code
+// }
+//function expression 
+// var fn = function myfn() {
+
+// }
+
+//function expression with anyanomous fuction
+// var fn = function() {
+
+// }
+
+//IIFE (Imidiate Invoke function expression)
+// (function() {
+//   //your code here
+//   console.log('IIFE will be invoked immediatly');
+// })()
+
+//arrow function expression
+// var fn = () => { 
+//     // your code
+// }
+
+// var myname = 'Ahmad'
+// var fn = () => (myname)
+// var fn = () => myname
+// var fn = param => param === 'something'
+
+
+
+
+
+//Scope ------------------------------------------------------------
+//what is scope 
+//collects and maintains a look-up list of all the
+// declared identifiers (variables),
+// and enforces a strict set of rules as to how these are
+// accessible to currently executing code.
+
+//how can we declare variable 
+// var x = 'var'
+// let x1 = 'var1'
+// const x2 = 'var2'
+// x3 = 'var3' // very bad practice 
+
+// //javascript is a functional scope
+// function foo() {
+//     var myVar = 'hello';
+//     function bar() {
+//         var myVar2 = 'world';
+//         console.log(myVar2, myVar);
+
+//         function zoo() {
+//             var myVar3 = 'Hi';
+//             console.log(myVar3, myVar2, myVar);
+//         }
+//     }
+// }
+// foo();
+// console.log(myVar);
+
+//Block Scope let, const, it's the best parctic to use let and const
+// function fn() {
+//     let x = '12';
+//     if (x) {
+//         let y = 'hello world'
+//         console.log(x);
+//     }
+
+//     console.log(y);
+// }
+// fn();
+
+// block every bracket like {} is a block if, for, try catch, fn
+
+
+//Hoisting -----------------------------------------------
+// console.log(x);
+
+// var x = 4;
+
+
+// foo();
+// function foo() {
+//     console.log('Iam a function');
+// }
+
+
+// console.log(fn());
+
+// var fn = function() {
+//     console.log('I am a function expression');
+// }
+
+console.log(blockVar);
+
+let blockVar = 'I am blocl var';
+
 
 
