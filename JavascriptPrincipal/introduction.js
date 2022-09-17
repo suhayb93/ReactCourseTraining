@@ -80,5 +80,5 @@ function customIsNan(val) {
 }
 
 //passing ref and value
-const NANError = Infinity/Infinity
+const NANError = Infinity / Infinity
 console.log(NANError)
