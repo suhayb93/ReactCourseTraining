@@ -1,6 +1,6 @@
 // Async -----------------------------------------------------
-// eventloop
-//setTimeout()
+// event loop
+// setTimeout()
 // console.log('before');
 // setTimeout(() => {
 //     console.log('inside setTimeout')
