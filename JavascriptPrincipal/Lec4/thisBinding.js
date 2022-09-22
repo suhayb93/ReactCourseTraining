@@ -256,14 +256,15 @@ foo.call(null);
 
 // }
 ////
-// arrow function, take foo from parent scope 
+// arrow function, take the value of this from parent scope 
 
 //Exmaple 1 --------------------------
 //same as function
-// var a = 4;
-// var foo = () => {
-//     console.log(this.a)
-// }
+var a = 4;
+var foo = () => {
+    var a = 3;
+    console.log(this.a)
+}
 
 //Exmaple 2 --------------------------
 var a = 'global'
@@ -271,10 +272,11 @@ var foo = () => {
     console.log(this.a)
 }
 function bar() {
-    var foo = () => {
-        console.log(this.a)
+    console.log(this.a) //2 
+    var baz = () => {
+        console.log(this.a) // 2
     }
-    foo();
+    baz();
 }
 
 var obj = {
@@ -283,5 +285,23 @@ var obj = {
     bar: bar
 }
 
-obj.foo();
+// obj.foo();
 obj.bar();
+
+bar.call({ a: 5 })
+
+function foo() {
+    var a = 5;
+}
+
+foo.a = 4
+
+foo.call(foo)
+
+var arrowFn = () => {
+    var x = 4;
+
+}
+console.log(x)
+
+arrowFn();// bind

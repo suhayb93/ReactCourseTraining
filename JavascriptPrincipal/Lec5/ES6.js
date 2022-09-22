@@ -100,13 +100,12 @@
 
 // //Template litrals
 // var word = 'World'
-
 // console.log(`hello ${word}`)
+
 
 // var printWord = () => {
 //     return 'World';
 // }
-
 // console.log(`hello ${printWord()}`);
 
 // //Arrow function
