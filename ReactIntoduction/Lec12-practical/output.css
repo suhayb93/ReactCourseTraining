@@ -1,0 +1,35 @@
+.logo {
+  background-color: lightGreen;
+  background: DarkGray;
+  box-shadow: 0 0 1px DarkGray;
+  color: #fff;
+  -webkit-animation: alternate;
+  -moz-animation: alternate;
+  -o-animation: alternate;
+  animation: alternate;
+}
+
+.header .logo {
+  background-color: red;
+  background: DarkBlue;
+  box-shadow: 0 0 1px DarkBlue;
+  color: #fff;
+}
+
+.body {
+  font-size: 20px;
+  background-color: lightGreen;
+  background: DarkRed;
+  box-shadow: 0 0 1px DarkRed;
+  color: #fff;
+}
+.body .footer {
+  background-color: red;
+}
+
+.header .logo,
+.body .logo {
+  font-size: large;
+}
+
+/*# sourceMappingURL=output.css.map */

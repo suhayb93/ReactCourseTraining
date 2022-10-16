@@ -1,0 +1,18 @@
+@mixin theme($theme: DarkGray) {
+    background-color: $theme;
+    box-shadow: 0 0 1px $theme;
+    color: #ffff;
+}
+
+@mixin border-image {
+    -webkit-border-image: 5px;
+    -moz-border-image: 5px;
+    -o-border-image: 5px;
+    border-image: 5px;
+
+}
+
+%equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}

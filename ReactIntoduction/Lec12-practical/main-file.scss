@@ -1,0 +1,55 @@
+$background-color-green: lightGreen;
+$background-color-red: red;
+
+@mixin theme($themeColor: DarkRed) {
+    background: $themeColor;
+    box-shadow: 0 0 1px $themeColor;
+    color: #fff;
+    // -ms-animation: alternate;
+}
+
+@mixin animation {
+    -webkit-animation: alternate;
+    -moz-animation: alternate;
+    -o-animation: alternate;
+    animation: alternate;
+}
+
+
+// backgroundColorRed
+
+.logo {
+    background-color: $background-color-green;
+    @include theme(DarkGray);
+    @include animation;
+}
+
+.header {
+    .logo {
+        background-color: $background-color-red;
+        @include theme(DarkBlue);
+
+    }
+}
+
+.body {
+    font-size: 20px;
+    background-color: $background-color-green;
+    @include theme;
+
+    .footer {
+        background-color: $background-color-red;
+    }
+}
+
+.header,
+.body {
+    .logo {
+        font-size: large;
+
+    }
+}
+
+
+
+//sass --watch "name of sass file" "name of css file"

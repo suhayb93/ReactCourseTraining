@@ -1,0 +1,22 @@
+.main {
+  font-size: 20px;
+  font-weight: 30px;
+}
+
+.header.logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .title {
+  font-size: 23px;
+  background-color: DarkRed;
+  box-shadow: 0 0 1px DarkRed;
+  color: white;
+}
+.header.logo {
+  padding: 10px;
+  left: 20px;
+}
+
+/*# sourceMappingURL=sassExample.css.map */
