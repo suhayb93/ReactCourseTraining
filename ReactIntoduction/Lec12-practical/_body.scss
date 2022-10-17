@@ -1,0 +1,9 @@
+.body {
+    font-size: 20px;
+    background-color: $background-color-green;
+    // @include theme;
+
+    .footer {
+        background-color: $background-color;
+    }
+}

@@ -1,5 +1,8 @@
 import React from 'react';
+import * as myUtils from './module';
+
 function Welcome(props) {
+  myUtils.fn1();
   return <h1>Hello, {props.name}</h1>;
 }
 

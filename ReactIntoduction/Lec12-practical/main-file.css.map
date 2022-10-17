@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["main-file.scss","_variables.scss","_mixins.scss","_utils.scss","_body.scss"],"names":[],"mappings":"AAMA;EACI;EACA;EACA;;;AAKJ;EACI,kBCfqB;ECCrB,YFee;EEdf;EACA;EAKA;EACA;EACA;EACA;EFOA,aGlBU;;;AHyBd;EACI,kBGzBe;;AH2Bf;EACI,kBC5BW;ECAf,YF6BmB;EE5BnB;EACA;;;AFoCA;AAAA;EACI;;;AIxCR;EACI;EACA,kBHFqB;;AGKrB;EACI,kBHLW","file":"main-file.css"}

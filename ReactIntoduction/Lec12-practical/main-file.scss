@@ -1,20 +1,14 @@
-$background-color-green: lightGreen;
-$background-color-red: red;
+@use "./utils";
+@import "./mixins";
+@import "./_variables.scss";
 
-@mixin theme($themeColor: DarkRed) {
-    background: $themeColor;
-    box-shadow: 0 0 1px $themeColor;
-    color: #fff;
-    // -ms-animation: alternate;
+
+
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
 }
-
-@mixin animation {
-    -webkit-animation: alternate;
-    -moz-animation: alternate;
-    -o-animation: alternate;
-    animation: alternate;
-}
-
 
 // backgroundColorRed
 
@@ -22,25 +16,24 @@ $background-color-red: red;
     background-color: $background-color-green;
     @include theme(DarkGray);
     @include animation;
+    font-family: utils.$PrimaryFont;
+
+    @extend %message-shared;
 }
 
+
+
 .header {
+    background-color: utils.$background-color;
+
     .logo {
-        background-color: $background-color-red;
+        background-color: $background-color;
         @include theme(DarkBlue);
 
     }
 }
 
-.body {
-    font-size: 20px;
-    background-color: $background-color-green;
-    @include theme;
 
-    .footer {
-        background-color: $background-color-red;
-    }
-}
 
 .header,
 .body {
@@ -49,6 +42,8 @@ $background-color-red: red;
 
     }
 }
+
+@import "./body";
 
 
 
