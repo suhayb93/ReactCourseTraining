@@ -1,0 +1,55 @@
+1. build the Fetch api utils 
+2. add a products page ----> js + scss
+3. add a product card page with css
+4. flex box with examples
+
+
+
+// box model ---- 
+// the way how the html element rendered in html Document or DOM 
+// each html element represnted as box consists of:
+// content - padding - border - margin 
+
+box model Ref: 
+https://medium.com/@kudzanayi/css-box-model-564a0a50771d#:~:text=The%20'CSS%20Box%20Model%E2%80%9D%20is%20a%20set%20of%20rules%20that,page%20that%20box%20will%20go.&text=Content%20%2D%20The%20text%2C%20image%2C,media%20content%20in%20the%20element.
+
+
+//display inline - block -Z 
+block: (div)
+- start a new line and take all horizantal width
+- width: take the width of the parent 
+- height: take the height of the content
+- you can alter with and the height
+
+inline:  (span)
+- does not start new line
+- take the width and height of its content 
+- you can not alter height and width 
+- margin top and bottom does not affected 
+
+inline block: 
+- take it's width of it's content 
+- you can alter width, height, margin-top and margin bottom
+
+ref:
+https://medium.com/@DaphneWatson/css-display-properties-block-inline-and-inline-block-how-to-tell-the-difference-7d3a1e6e3051
+
+
+Dispaly flex: 
+Flexbox, or CSS3 Flexible Box, is a super lightweight way to lay out UI components on a web page.
+- main axis, corss axis
+- flex-direction
+- justify-content
+- align-item 
+
+
+ref: 
+https://medium.com/@emmabostian/css3-flexbox-the-cool-kid-on-the-block-cca8141cbee9
+
+
+
+Class Specificity Rules
+
+ref: 
+https://medium.com/@emmabostian/css-specificity-d5fdb0996c81
+
