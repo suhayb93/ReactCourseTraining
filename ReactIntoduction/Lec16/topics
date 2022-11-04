@@ -1,0 +1,15 @@
+1. what is hooks 
+2. life cycle on hooks
+3. react main hooks
+    3.1. useState 
+    3.2. useEffect ===> dependency array
+4. React example 
+    4.1. clock example 
+
+
+----------------------------- 
+1. constructor ====> there is no need to constructor 
+2. render ====> the component body itself 
+3. componentDidUpdate, ComponentDidUpdate, ComponentWillUnmount ===> useEffect
+
+

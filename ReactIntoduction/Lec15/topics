@@ -1,0 +1,5 @@
+1. building Modal with React
+    1.1. creating new Component named Modal
+    1.2. adding new component to App.js 
+    1.3. create general context
+    1.4. create helpers from modal

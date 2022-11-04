@@ -56,22 +56,24 @@ foo(null, 6); // 6 <-- null coerces to `0`
 
 //Destructuring
 //before
-function foo() {
+function useState() {
     return [1, 2, 3];
 }
 
-var x = 5;
-if (x === 5) {
-    x = 6
-} else {
-    x = 9
-}
+// var x = 5;
+// if (x === 5) {
+//     x = 6
+// } else {
+//     x = 9
+// }
 
 x === 5 ? x = 6 : x = 9;
 
-var tmp = foo(),
+var tmp = useState(),
     a = tmp[0], b = tmp[1], c = tmp[2];
 console.log(a, b, c);
+
+var [a, b, c] = useState();
 
 function bar() {
     var obj = {
