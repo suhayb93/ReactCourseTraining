@@ -1,0 +1,12 @@
+Conclusion React Router
+1. Browser Router ====> <BroserRouter><Routes> <Route path={'/'} element={<Page />}/> </Routes> </BrowserRouter>
+   I can not use some feature like errorHandling and loader 
+2. createBrowserRoute ======> JSON structure of router 
+    2.1 createRouteFromElement ====> to use Routes as JSX
+
+3. Router hooks
+    3.1 useParams ===> we use it to read parameter thats we use in dynamic routes (path="/:id")
+    3.2 useSearchParams ====> use to read query string
+    3.3 useLocation ===> used to detrminate the current location of route, and we can read some data that we passed from other routes by state
+    3.4 useRouteError ===> to read erros happen in routing 
+    3.5 useLoaderData ===> used to read data passed from loader in Routes 
